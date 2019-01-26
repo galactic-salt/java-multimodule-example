@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web-server:
+    build:
+      context: ./
+    ports:
+      - "8080"
+    volumes:
+      - maven-repo:/root/.m2
+
+
+volumes:
+  maven-repo:
